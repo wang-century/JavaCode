@@ -18,5 +18,8 @@ Java practice code.
     - TestSwitch            测试switch语句  
     - TestVariable          测试变量 
     - TestWhile             测试while循环结构 求1-100之间的累加和  
+    - TestMethod            测试方法的基本使用 
+    - TestOverload          测试方法重载  方法名相同，参数个数/类型/顺序不同，构成重载 
+    
     
     
