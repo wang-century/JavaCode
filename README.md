@@ -1,6 +1,6 @@
 # JavaCode
 Java practice code.
-
+<pre>
 - com.company 
     - Main                  开始:输出"helloworld" 
     - TestBreakContinue     打印101-150之间的所有质数  质数:只能被1和它本身整除的数 
@@ -21,6 +21,6 @@ Java practice code.
     - TestMethod            测试方法的基本使用 
     - TestOverload          测试方法重载  方法名相同，参数个数/类型/顺序不同，构成重载 
     - TestRecursion         测试递归及使用循环完成递归功能及其耗时比较   计算n的阶乘 
-    
+</pre> 
     
     
