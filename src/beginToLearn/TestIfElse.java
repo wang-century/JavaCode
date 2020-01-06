@@ -1,4 +1,4 @@
-package com.company;
+package beginToLearn;
 
 /**
  * 测试if-else选择结构

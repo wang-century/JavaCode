@@ -1,4 +1,4 @@
-package com.company;
+package beginToLearn;
 
 /**
  * 测试for循环结构

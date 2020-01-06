@@ -1,4 +1,4 @@
-package com.company;
+package beginToLearn;
 
 /**
  * 文档注释

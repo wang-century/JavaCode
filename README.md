@@ -1,7 +1,7 @@
 # JavaCode
 Java practice code.
 <pre>
-- com.company 
+- beginToLearn 入门阶段
     - Main                  开始:输出"helloworld" 
     - TestBreakContinue     打印101-150之间的所有质数  质数:只能被1和它本身整除的数 
     - TestConstant          final关键字的使用 

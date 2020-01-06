@@ -1,4 +1,4 @@
-package com.company;
+package beginToLearn;
 
 /**
  * 测试方法的基本使用
