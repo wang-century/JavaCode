@@ -1,0 +1,2 @@
+# JavaCode
+Java practice code.
