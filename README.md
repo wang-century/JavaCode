@@ -21,6 +21,9 @@ Java practice code.
     - TestMethod            测试方法的基本使用 
     - TestOverload          测试方法重载  方法名相同，参数个数/类型/顺序不同，构成重载 
     - TestRecursion         测试递归及使用循环完成递归功能及其耗时比较   计算n的阶乘 
+    - Student               测试类的基本使用  包含学生类和电脑类  
+    - TestConstructor       测试构造方法  测量两点之间的距离 包含Point类以及TestConstructor类
+    - User                  测试构造方法的重载 用户类
 </pre> 
     
     
