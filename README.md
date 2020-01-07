@@ -23,7 +23,9 @@ Java practice code.
     - TestRecursion         测试递归及使用循环完成递归功能及其耗时比较   计算n的阶乘 
     - Student               测试类的基本使用  包含学生类和电脑类  
     - TestConstructor       测试构造方法  测量两点之间的距离 包含Point类以及TestConstructor类
-    - User                  测试构造方法的重载 用户类
+    - User                  测试构造方法的重载 用户类 
+    - TestThis              测试This的使用 
+    - TestStatic            测试static的使用以及静态初始化块的使用 
 </pre> 
     
     
