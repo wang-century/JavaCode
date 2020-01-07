@@ -1,4 +1,4 @@
-package beginToLearn;
+package cn.centuryw.beginToLearn;
 
 /**
  * 测试while循环结构

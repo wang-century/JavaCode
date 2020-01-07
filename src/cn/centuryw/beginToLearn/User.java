@@ -1,4 +1,4 @@
-package beginToLearn;
+package cn.centuryw.beginToLearn;
 
 /**
  * 构造方法的重载

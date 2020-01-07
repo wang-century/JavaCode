@@ -1,4 +1,4 @@
-package beginToLearn;
+package cn.centuryw.beginToLearn;
 
 /**
  * 测试static的使用以及静态初始化块的使用

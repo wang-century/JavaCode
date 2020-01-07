@@ -1,4 +1,4 @@
-package beginToLearn;
+package cn.centuryw.beginToLearn;
 
 /**
  * 测试字符类型
