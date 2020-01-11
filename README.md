@@ -26,6 +26,9 @@ Java practice code.
     - User                  测试构造方法的重载 用户类 
     - TestThis              测试This的使用 
     - TestStatic            测试static的使用以及静态初始化块的使用 
+    - TestImport            测试import导入包及导入包重名的解决方法及静态导入 
+    - TestExtends           测试继承  使用extends实现继承
+    - TestInstanceof        测试instanceof运算符的使用 
 </pre> 
     
     
