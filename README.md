@@ -29,6 +29,10 @@ Java practice code.
     - TestImport            测试import导入包及导入包重名的解决方法及静态导入 
     - TestExtends           测试继承  使用extends实现继承
     - TestInstanceof        测试instanceof运算符的使用 
+    - TestOverride          测试方法的重写 
+    - TestObject            Object类的用法 重写toString方法
+    - TestEquals            equals方法测试和自定义类重写equals方法 
+    - TestSuper             测试super的使用 
 </pre> 
     
     

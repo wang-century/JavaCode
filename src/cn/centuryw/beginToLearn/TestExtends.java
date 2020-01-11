@@ -25,6 +25,8 @@ class Programmer extends Person{    //Programmer类继承Person类
     public void study(){
         System.out.println("正在学习");
     }
+    public Programmer(){};
+
     public Programmer(String name,int age,String major){
         this.name = name;
         this.age = age;
