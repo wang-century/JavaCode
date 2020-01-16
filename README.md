@@ -33,6 +33,9 @@ Java practice code.
     - TestObject            Object类的用法 重写toString方法
     - TestEquals            equals方法测试和自定义类重写equals方法 
     - TestSuper             测试super的使用 
+    - TestEncapsulation     封装的实现-使用访问控制符
+    - TestPolym             多态
+    - TestArray             数组
 </pre> 
     
     
