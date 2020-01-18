@@ -36,6 +36,13 @@ Java practice code.
     - TestEncapsulation     封装的实现-使用访问控制符
     - TestPolym             多态
     - TestArray             数组
+- cn.centuryw.planeGame 飞机游戏
+    - Constant              静态变量
+    - Explode               爆炸效果
+    - GameObject            游戏对象类
+    - MyGameFrame           主类（运行）
+    - Plane                 飞机类
+    - Shell                 炮弹类
 </pre> 
     
     
