@@ -36,6 +36,9 @@ Java practice code.
     - TestEncapsulation     封装的实现-使用访问控制符
     - TestPolym             多态
     - TestArray             数组
+    - TestAbstract          测试抽象类，抽象方法
+    - TestInterface         测试接口
+    - TestInnerClass        测试内部类（静态内部类和非静态内部类、匿名内部类、方法内部类）
 - cn.centuryw.planeGame 飞机游戏
     - Constant              静态变量
     - Explode               爆炸效果
