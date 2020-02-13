@@ -39,6 +39,11 @@ Java practice code.
     - TestAbstract          测试抽象类，抽象方法
     - TestInterface         测试接口
     - TestInnerClass        测试内部类（静态内部类和非静态内部类、匿名内部类、方法内部类）
+    - TestString            测试字符串类的基本用法
+    - TestArrayCopy         数组拷贝
+    - TestArrays            java.util.Arrays工具类的使用
+    - Test2DArray           二维数组
+    
 - cn.centuryw.planeGame 飞机游戏
     - Constant              静态变量
     - Explode               爆炸效果
