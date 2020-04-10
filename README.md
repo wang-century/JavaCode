@@ -43,6 +43,8 @@ Java practice code.
     - TestArrayCopy         数组拷贝
     - TestArrays            java.util.Arrays工具类的使用
     - Test2DArray           二维数组
+    - TestWrappedClass      测试包装类
+    - TestArrayTableData    测试数组存储表格数据
     
 - cn.centuryw.planeGame 飞机游戏
     - Constant              静态变量
