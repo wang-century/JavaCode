@@ -45,6 +45,8 @@ Java practice code.
     - Test2DArray           二维数组
     - TestWrappedClass      测试包装类
     - TestArrayTableData    测试数组存储表格数据
+    - TestBubbleSort        冒泡排序实现
+    - TestBinarySearch      定义二分法查找（传入数组和要查找的数，若找到则返回该数，否则返回-1）
     
 - cn.centuryw.planeGame 飞机游戏
     - Constant              静态变量
