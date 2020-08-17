@@ -30,8 +30,8 @@ Java practice code.
     - TestExtends           测试继承  使用extends实现继承
     - TestInstanceof        测试instanceof运算符的使用 
     - TestOverride          测试方法的重写 
-    - TestObject            Object类的用法 重写toString方法
-    - TestEquals            equals方法测试和自定义类重写equals方法 
+    - TestObject            Object类的用法 重写equals方法、toString方法
+    - TestEquals            equals方法测试和自定义类重写equals方法、toString方法
     - TestSuper             测试super的使用 
     - TestEncapsulation     封装的实现-使用访问控制符
     - TestPolym             多态
@@ -47,6 +47,10 @@ Java practice code.
     - TestArrayTableData    测试数组存储表格数据
     - TestBubbleSort        冒泡排序实现
     - TestBinarySearch      定义二分法查找（传入数组和要查找的数，若找到则返回该数，否则返回-1）
+    - SingelInstalceTest    单例模式
+    - TestObjects           Objects类的使用 isNull()、equals()
+    - TestDate              Date日期类的使用
+    - TestDateFormat        简单日期格式化类的使用
     
 - cn.centuryw.PlaneGame 飞机游戏
     - Constant              静态变量
