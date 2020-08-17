@@ -1,7 +1,7 @@
 # JavaCode
 Java practice code.
 <pre>
-- cn.centuryw.beginToLearn 入门阶段
+- cn.centuryw.BeginToLearn 入门阶段
     - Main                  开始:输出"helloworld" 
     - TestBreakContinue     打印101-150之间的所有质数  质数:只能被1和它本身整除的数 
     - TestConstant          final关键字的使用 
@@ -48,7 +48,7 @@ Java practice code.
     - TestBubbleSort        冒泡排序实现
     - TestBinarySearch      定义二分法查找（传入数组和要查找的数，若找到则返回该数，否则返回-1）
     
-- cn.centuryw.planeGame 飞机游戏
+- cn.centuryw.PlaneGame 飞机游戏
     - Constant              静态变量
     - Explode               爆炸效果
     - GameObject            游戏对象类
