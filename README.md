@@ -71,7 +71,8 @@ Java practice code.
     - CustomException       自定义异常
     - TestMultithreading    多线程 
     - ThreadSate            线程同步(线程安全)
-    - ThreadCommunication   线程通信
+    - ThreadCommunication   线程通信、并发编程下，多线程访问变量的不可见性问题
+    - ThreadPools           线程池、死锁
     
    
     
