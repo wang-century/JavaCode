@@ -60,6 +60,21 @@ Java practice code.
     - TestGenericity        泛型
     - TestCollection        集合
     - CollectionDemo        collection集合的遍历方式。
+    - TestLinkedList        使用LinkedList实现栈和队列
+    - TestCollections       Collections工具类的使用(操作集合)
+    - VariableParameter     可变参数
+    - DouDiZhuGame          斗地主游戏的案例开发
+    - TestMap               Map集合的使用
+    - SelectionSort         选择排序
+    - BinarySearch          二分查找
+    - TestException         异常
+    - CustomException       自定义异常
+    - TestMultithreading    多线程 
+    - ThreadSate            线程同步(线程安全)
+    - ThreadCommunication   线程通信
+    
+   
+    
     
 - cn.centuryw.PlaneGame 飞机游戏
     - Constant              静态变量
@@ -68,6 +83,9 @@ Java practice code.
     - MyGameFrame           主类（运行）
     - Plane                 飞机类
     - Shell                 炮弹类
+    
+- cn.centuryw.BooksManagementSystem 图书管理系统
+
 </pre> 
     
     
