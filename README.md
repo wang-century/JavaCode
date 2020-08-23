@@ -73,6 +73,22 @@ Java practice code.
     - ThreadSate            线程同步(线程安全)
     - ThreadCommunication   线程通信、并发编程下，多线程访问变量的不可见性问题
     - ThreadPools           线程池、死锁
+    - TestAtomicity         原子性研究
+    - ConcurrencyPackage    并发包
+        - TestConcurrentHashMap     concurrentHashMap的使用
+        - TestCountDownLatch        countDownLatch的使用(允许一个或多个线程等待其他线程完成操作，再执行自己)
+        - TestCyclicBarrier         cyclicBarrier的使用(线程任务必须等待其他线程执行完毕以后才能最终触发自己执行)
+        - TestExchanger             Exchanger的使用(用于线程间协作的工具类)
+        - TestSemaphore             Semaphore的使用(控制线程的并发占锁数量)
+    - TestLambda            lambda表达式的使用
+    - TestMethodReferences  方法引用
+    - TestStream            Stream流
+        - StreamDemo1       什么是stream流
+        - StreamDemo2       strean流的获取
+        - StreamDemo3       stream流的常用API
+        - StreamDemo4       把stream流的数据转回成集合
+    - FileDemo              文件类的使用
+    - RecursionDemo         递归
     
    
     

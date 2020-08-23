@@ -52,6 +52,7 @@ package cn.centuryw.BeginToLearn.ThreadCommunication;
  * e.再次对flag进行操作的时候线程会从主内存读取最新的值，放入到工作内存中
  * 总结: volatile保证不同线程对共享变量操作的可见性，也就是说一个线程修改了volatile修饰的变量，当修改
  * 写回主内存时，另外—个线程立即看到最新的值。
+ *
  */
 public class Manager {
     public static void main(String[] args) {
