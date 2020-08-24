@@ -56,6 +56,11 @@ import java.text.SimpleDateFormat;
  *      - public string[] list():               获取当前目录下所有的”一级文件名称"到一个字符串数组中去返回。
  *      - public file[] listFiles()(常用):       获取当前目录下所有的"一级文件对象"到一个文件对象数组中去返回（重点）
  *
+ * 目标:递归实现文件搜索(非规律递归)
+ * 需求:希望去D:/soft目录寻找出eclipse.exe文件。
+ * 分析:
+ * (1）定义一个方法用于做搜索。
+ * (2）进入方法中进行业务搜索分析。
  */
 public class FileDemo {
     public static void main(String[] args) throws IOException {
@@ -107,6 +112,49 @@ public class FileDemo {
         long fileModifyTime = file6.lastModified();
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         System.out.println(sdf.format(fileModifyTime));
+
+
+        // 去某个目录下搜索某个文件
+        searchFile(new File("/home/centuryw/"),"山东省2020年10月高等教育自学考试报考简章.xls");
+
+    }
+
+    /**
+     * 去某个目录下搜索某个文件
+     * @param dir 目录
+     * @param fileName 文件名
+     * @return 文件对象
+     */
+    static void searchFile(File dir,String fileName){
+        // 1.判断是否存在该路径，是否是文件夹
+        if (dir.exists() && dir.isDirectory()){
+            // 2.提取当前目录下的全部一级文件对象
+            File[] files = dir.listFiles();
+            // 3.判断是否存在一级文件对象（判断是否不为空目录）
+            if (files!=null && files.length>0){
+                // 4.遍历一级文件对象
+                for (File file:files){
+                    // 5.判断file是文件还是文件夹
+                    // 6.如果是文件,判断是否是我要找的文件
+                    if (file.isFile()){
+                        if (file.getName().contains(fileName)){
+                            System.out.println(file.getAbsoluteFile());
+                        }
+                        // 找到文件启动他
+                        /*Runtime runtime = Runtime.getRuntime();
+                        try {
+                            runtime.exec(file.getAbsolutePath());
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }*/
+                    }else{
+                        // 7.该文件是文件夹，文件夹要递归进入继续寻找
+                        searchFile(file,fileName);
+                    }
+                }
+            }
+
+        }
 
     }
 }
