@@ -113,9 +113,36 @@ import java.io.*;
  * 字符输入转换InputStreamReader:
  * --作用:可以把原始的字节流按照当前默认的代码编码转换成字符输入流。(解决乱码问题)
  * 也可以把原始的字节流按照指定编码转换成字符输入流
+ *
+ * 字符输出转换流: OutputStreamWriter
+ * --作用:可以指定编码把字节输出流转换成字符输出流。
+ *      制定写出字符编码
+ *
+ * 目标:对象序列化技术。
+ * 对象序列化:就是把Java对象数据直接存储到文件中去。       对象→>文件中
+ * 对象反序列化:就是把Java对象的文件数据恢复到Java对象中   文件中=>对象
+ *
+ * 对象序列化流（对象字节输出流）: ObjectOutputStream
+ * --作用:把内存中的Java对象数据保存到文件中去。
+ * --构造器:public ObjectOutputStream(OutputStream out)
+ * --序列化方法:public final void WriteObject (object obj)
+ * 注意:如果要序列化对象，那么对象必须实现序列化接口: implements Serializable
+ *
+ *
+ * 对象反序列化（对象字节输入流）: ObjectInputStream
+ * --作用:读取序列化的对象文件恢复到Java对象中。
+ * --构造器:public objectInputstream (Inputstream is)
+ * --方法:public final object readobject()
+ *
+ * 如果一个字段不想参数序列化:
+ *      transient修饰i该成员变量，它将不参与序列化!
+ * 序列化版本号:
+ * //加入序列版本号
+ * private static final long serialVersionUID = 2L;
+ * 必须序列化使用的版本号和反序列化使用的版本号一致才可以正常反序列化!否则报错!
  */
 public class IODemo {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException, ClassNotFoundException {
         /* 单个字节读取 */
         //demo1();
 
@@ -147,10 +174,91 @@ public class IODemo {
         //demo10();
 
         // 字符缓冲输出流
-        demo11();
+        //demo11();
 
         // 字符输入转换流
-        demo12();
+        //demo12();
+
+        // 字符输出转换流
+        //demo13();
+
+        // 对象序列化
+        demo14();
+
+        // 对象反序列化
+        demo15();
+
+
+
+    }
+
+    private static void demo15() throws IOException, ClassNotFoundException {
+        /* 对象反序列化 */
+        InputStream inputStream = new FileInputStream("/home/centuryw/文档/Users.dat");
+        // 包装
+        ObjectInputStream os = new ObjectInputStream(inputStream);
+        // 反序列化
+        User user = (User)os.readObject();
+        System.out.println(user);
+
+    }
+
+    static class User implements Serializable{
+        private String name;
+        // transient 修饰的变量不会参与序列化
+        private transient String passwd;
+
+        // 加入序列化版本号
+        private static final long serialVersionUIL = 1L;
+
+
+
+        public User(String name, String passwd) {
+            this.name = name;
+            this.passwd = passwd;
+        }
+
+        public String getName() {
+            return name;
+        }
+
+        public void setName(String name) {
+            this.name = name;
+        }
+
+        public String getPasswd() {
+            return passwd;
+        }
+
+        public void setPasswd(String passwd) {
+            this.passwd = passwd;
+        }
+
+        @Override
+        public String toString() {
+            return "User "+this.name;
+        }
+    }
+
+    private static void demo14() throws IOException {
+        // 创建序列化对象
+        User user = new User("铁山公主","21379571080921");
+        OutputStream os = new FileOutputStream("/home/centuryw/文档/Users.dat");
+        // 包装
+        ObjectOutputStream objectOutputStream = new ObjectOutputStream(os);
+        // 通过对象字节输出流序列化对象
+        objectOutputStream.writeObject(user);
+        os.close();
+        System.out.println("序列化成功");
+    }
+
+
+    private static void demo13() throws IOException{
+        OutputStream os = new FileOutputStream("");
+        // 转换
+        Writer fw = new OutputStreamWriter(os,"GBK");
+        fw.write("你好世界");
+        fw.close();
     }
 
     private static void demo12() throws IOException{
@@ -161,7 +269,10 @@ public class IODemo {
         // 包装成缓冲流
         BufferedReader br = new BufferedReader(isr);
         // 读取数据
-
+        String line;
+        while ((line=br.readLine())!=null){
+            System.out.println(line);
+        }
 
     }
 

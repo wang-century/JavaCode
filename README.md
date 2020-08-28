@@ -87,9 +87,13 @@ Java practice code.
         - StreamDemo2       strean流的获取
         - StreamDemo3       stream流的常用API
         - StreamDemo4       把stream流的数据转回成集合
+        - PrintStreamDemo   打印流
     - FileDemo              文件类的使用
     - RecursionDemo         递归
+    - BuyBeerQuestion       买酒问题
     - TestIO                IO流
+    - PropertiesDemo        属性集对象保存读取属性文件数据
+    
    
     
     
