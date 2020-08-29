@@ -90,10 +90,10 @@ Java practice code.
         - PrintStreamDemo   打印流
     - FileDemo              文件类的使用
     - RecursionDemo         递归
-    - BuyBeerQuestion       买酒问题
+    - BuyBeerQuestion       买酒问题(未完成)
     - TestIO                IO流
     - PropertiesDemo        属性集对象保存读取属性文件数据
-    
+    - CopyDir               复制文件夹(包括文件夹下所有文件)
    
     
     
