@@ -94,7 +94,13 @@ Java practice code.
     - TestIO                IO流
     - PropertiesDemo        属性集对象保存读取属性文件数据
     - CopyDir               复制文件夹(包括文件夹下所有文件)
-   
+    - TestInetAddress       InetAddress类(IP类)概述
+    - TestUDP   使用UDP实现客户端发，服务端收
+        - UDPServer         服务器端
+        - UDPClient         客户端
+    - TestTCP   使用TCP实现客户端发，服务端收
+        - TCPServer         服务端
+        - TCPClient         客户端
     
     
 - cn.centuryw.PlaneGame 飞机游戏
