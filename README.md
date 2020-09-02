@@ -101,6 +101,11 @@ Java practice code.
     - TestTCP   使用TCP实现客户端发，服务端收
         - TCPServer         服务端
         - TCPClient         客户端
+    - FilesUpload   文件上传(客户端上传文件到服务器)
+        - FileServer        服务端
+        - FileClient        客户端
+    
+        
     
     
 - cn.centuryw.PlaneGame 飞机游戏
@@ -112,6 +117,7 @@ Java practice code.
     - Shell                 炮弹类
     
 - cn.centuryw.BooksManagementSystem 图书管理系统
+
 
 </pre> 
     

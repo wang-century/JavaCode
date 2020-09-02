@@ -1,0 +1,43 @@
+package cn.centuryw.BeginToLearn.FilesUpload;
+
+import java.io.*;
+import java.net.Socket;
+
+public class ServerReaderThread extends Thread{
+    private final Socket socket;
+    public ServerReaderThread(Socket socket) {
+        this.socket = socket;
+    }
+
+    @Override
+    public void run() {
+        try{
+            // 接受客户端发来的文件
+            InputStream inputStream = socket.getInputStream();
+            BufferedInputStream bufferedInputStream = new BufferedInputStream(inputStream);
+            // 第一次读取文件名
+//            Reader reader = new InputStreamReader(inputStream);
+//            BufferedReader bufferedReader = new BufferedReader(reader);
+//            String fileName = FileServer.FILES_DEST+ File.separator+bufferedReader.readLine();
+//            System.out.println(fileName);
+            byte[] buffer = new byte[1024];
+            int len;
+            len = bufferedInputStream.read(buffer);
+            String fileName = new String(buffer,0,len);
+            System.out.println(fileName);
+            // 读取文件字节，写出到本地路径
+            BufferedOutputStream bufferedOutputStream = new BufferedOutputStream(new FileOutputStream(fileName));
+
+            while ((len=bufferedInputStream.read(buffer))!=-1){
+                bufferedOutputStream.write(buffer,0,len);
+            }
+            bufferedOutputStream.flush();
+            bufferedInputStream.close();
+            System.out.println("文件接收完毕");
+            BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream()));
+            bufferedWriter.write("文件接收完毕");
+        }catch (Exception e){
+            System.out.println(socket.getRemoteSocketAddress()+"断开连接");
+        }
+    }
+}
